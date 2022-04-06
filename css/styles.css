@@ -34,6 +34,15 @@ img {
     max-width: 100%; 
     height: auto;
 }
+
+/* ---убиралки обводок при фокусе */
+input, textarea {outline:none;}
+input:active, textarea:active {outline:none;}
+:focus {outline:none;}
+textarea {resize:none;}
+textarea {resize:vertical;}
+textarea {resize:horizontal;}
+
 /* Единый клас section */
 .section {
     padding-bottom: 94px;
@@ -44,19 +53,6 @@ img {
     padding-bottom: 0;
 }
 
-/* Form */
-.form,
-.hero-form {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-.hero-form {
-padding: 40px;
-height: 100%;
-display: block;
-}
 
 /* Интерактивные елементы лого */
 .logo,
@@ -168,6 +164,33 @@ display: block;
     min-width: 73px;
 }
 
+
+/* Container */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*------ Total Form ----*/
+
+.form,
+.hero-form {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.hero-form {
+padding: 40px;
+height: 100%;
+display: block;
+}
+
+/* ----Form btn---- */
+
 .footer-btn,
 .hero-form-btn {
     color: var(--primary-white-color);
@@ -199,6 +222,7 @@ display: block;
 .hero-form-btn {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
 }
  
 .footer-btn:hover,
@@ -212,14 +236,7 @@ display: block;
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-/* Container */
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+/*------  Form ----*/
 
 textarea {
     resize: none;
@@ -237,14 +254,16 @@ textarea {
     color: var(--title-text-color);
     margin: 0;
     padding: 0;
+    margin-bottom: 12px;
     
 }
 
 .hero-form-field {
-    /* outline: 5px solid pink;
-    margin-bottom: 20px;
-     */
+     /* outline: 5px solid pink; */
      position: relative;
+     
+     display: flex;
+     flex-direction: column;
 }
 
 .hero-form-input {
@@ -252,9 +271,11 @@ textarea {
       height: 40px;
       margin: 0;
       padding: 0;
-    /* margin: 0;
-    padding: 0;
-    padding-left: 42px; */
+      margin-top: 4px;
+      margin-bottom: 10px;
+      padding-left: 42px;
+
+    
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
@@ -297,26 +318,25 @@ textarea {
 }
 
 .hero-form-input:hover,
-.hero-form-input:focus {
+.hero-form-input:focus,
+.hero-form-input:checked {
     border: 1px solid var(--accent-color);
 }
 
 
+
 .hero-form-comment {
     height: 120px;
-
-}
-
-.hero-comment-form-label {
-
-}
-
-.hero-form-comment::placeholder {
+    margin-bottom: 20px;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.01em;
-    padding: 12px 16px;
+    padding: 12px 14px;
     
+    
+}
+
+.hero-form-comment::placeholder {
     color: rgba(117, 117, 117, 0.5);
 
 }
@@ -369,11 +389,7 @@ textarea {
     display: flex;
     align-items: center;
 }
-
-
-.checkbox:checked ~ .icon {
-   
-}     */
+   */
 
 /*Шапка профиля */
 
