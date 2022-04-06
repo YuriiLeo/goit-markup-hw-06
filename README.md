@@ -17,3 +17,5 @@ input:active, textarea:active {outline:none;}
 textarea {resize:none;}
 textarea {resize:vertical;}
 textarea {resize:horizontal;}
+
+або можна outline: transparent;
