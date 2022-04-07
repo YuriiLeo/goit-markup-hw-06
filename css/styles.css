@@ -566,9 +566,11 @@ margin-left: 50px;
     border-radius: 50%;
    
     border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: fill 250ms var(--kubik-rubik);
 } 
 
-.hero-btn-close:hover {
+.hero-btn-close:hover,
+.hero-btn-close:focus {
     fill: var(--accent-color);
 }
 
